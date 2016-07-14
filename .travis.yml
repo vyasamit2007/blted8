@@ -20,6 +20,7 @@ cache:
 
 addons:
   ssh_known_hosts:
+  - svn-5599.devcloud.hosting.acquia.com
   # - svn-4786.devcloud.hosting.acquia.com
 
 # @see https://docs.travis-ci.com/user/notifications
@@ -56,8 +57,8 @@ script:
 
 # Uncomment to enable automatic deployments following merges.
 deploy:
-  # provider: script
-  # script: ./blt.sh deploy -Ddeploy.commitMsg="Automated commit by Travis CI for Build ${TRAVIS_BUILD_ID}" -Ddeploy.branch="${TRAVIS_BRANCH}-build"
-  # skip_cleanup: true
-  # on:
-  #   branch: master
+   provider: script
+   script: ./blt.sh deploy -Ddeploy.commitMsg="Automated commit by Travis CI for Build ${TRAVIS_BUILD_ID}" -Ddeploy.branch="${TRAVIS_BRANCH}-build"
+   skip_cleanup: true
+   on:
+     branch: develop
