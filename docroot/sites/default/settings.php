@@ -248,6 +248,8 @@ $databases = array();
 $config_directories = array(
   CONFIG_SYNC_DIRECTORY => '../config',
 );
+// Acquia Cloud related setting
+$config_directories['vcs'] = $app_root . '/../config/' . basename($site_path);
 
 /**
  * Settings:
