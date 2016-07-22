@@ -1,0 +1,15 @@
+uuid: ed4a36f1-7a89-4897-ba4e-4b2a16e809c0
+langcode: en
+status: true
+dependencies: {  }
+id: event_reviewer
+label: 'Event Reviewer'
+weight: 10
+is_admin: null
+permissions:
+  - 'edit any event content'
+  - 'delete any event content'
+  - 'use draft_published transition'
+  - 'use needs_review_draft transition'
+  - 'use needs_review_published transition'
+  - 'use published_published transition'

@@ -1,0 +1,9 @@
+uuid: ec92a9f6-45e3-4d16-9fa9-8fc8e90f7bfc
+langcode: en
+status: true
+dependencies: {  }
+name: Terms
+vid: terms
+description: 'Professionally harness adaptive scenarios before.'
+hierarchy: 0
+weight: 0
